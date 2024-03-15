@@ -1,9 +1,11 @@
 # recurse_example
 
-This program will read a csv of sample air temperature data that I collected from an oil palm plantation in Ecuador during a tropical fieldwork investigation.
+In 2019, I installed air temperature sensors in the tropics of Ecuador to investigate the impacts of human activity on ecosystems and biodiversity. Measurements were collected from rainforest sites and agricultural sites over a period of two years. 
+Sensors were installed at 4 different heights at each site, from the ground to the canopy, to develop vertical air temperature profiles. The data were logged every five minutes.
+The ‘airtemp_testdata.csv’ contains sample data from the oil palm agriculture site. In this example, we include one-month of data collected by two sensors placed in the ground and canopy. 
 
-The four sets of air temperature data were collected in 5-minute intervals by field sensors placed at four different vertical heights between 0 and 6 meters. The air temperature sensors began data collection prior to field installation. The sensor batteries allowed data collection for a two-year period, however the sensors fail after heavy precipitation events. Therefore the data requires cleaning before processing and analysis.
+*How it works*
 
-This example program will clean the data to include the first month of collections after field installation. The program then resamples the data to 30-minute intervals and assembles a diurnal air temperature evolution record for each of the four vertical heights. This analysis is in preperation for subsequent comparison with air temperature collections from adjacent tropical forest sites to guide conservation policy recommendations
-
-Download the airtemp_testdata.csv to run this program
+This program will read the csv of sample air temperature data and resample the time series data into 30-minute intervals for analysis of diurnal air temperature evolution.
+We plot the data as a function of height and time of day. This exercise is in preparation for subsequent analysis with air temperature collections from adjacent tropical forest sites.
+Heights are in meter units. Air temperatures in degrees Celsius.
